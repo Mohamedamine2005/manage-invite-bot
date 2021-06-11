@@ -100,7 +100,7 @@ module.exports = class {
                 guildID: member.guild.id
             })
         ]);
-        logMessage += `Fetch guild data: ${Date.now()-fetchEventsStartAt}ms\n`;
+        logMessage += `Fetch events data: ${Date.now()-fetchEventsStartAt}ms\n`;
 
         if (inviter && guildBlacklistedUsers.includes(inviter.id)) {
             logMessage += "Blacklisted: true\n----------";
